@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'edu.iastate.shubham8.codepathmail'
-    compileSdk 32
+    compileSdk 34
 
     defaultConfig {
         applicationId "edu.iastate.shubham8.codepathmail"
         minSdk 27
-        targetSdk 32
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
