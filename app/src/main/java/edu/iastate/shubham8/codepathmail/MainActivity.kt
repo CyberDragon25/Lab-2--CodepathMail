@@ -1,10 +1,13 @@
 package edu.iastate.shubham8.codepathmail
 
+import android.icu.text.SimpleDateFormat
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,6 +27,9 @@ class MainActivity : AppCompatActivity() {
         emailsRv.adapter = adapter
         // Set layout manager to position the items
         emailsRv.layoutManager = LinearLayoutManager(this)
+
+        // setting the date TextView
+        // emailsRv.findViewById<TextView>(R.id.dateTv).text = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault()).format(Date())
 
         findViewById<Button>(R.id.loadMoreBtn).setOnClickListener {
             // Fetch next 5 emails and display in RecyclerView
